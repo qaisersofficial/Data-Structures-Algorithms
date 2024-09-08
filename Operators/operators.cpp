@@ -38,10 +38,10 @@ int main() {
         starline();
         cout<<"\t\tRelational Operations"<<endl;
         starline();
-        cout<<"Increment of First Number: "<<++a<<endl;
-        cout<<"Increment of Second Number: "<<b++<<endl;
-        cout<<"Decrement of First Number: "<<a--<<endl;
-        cout<<"Decrement of Second Number: "<<--b<<endl;
+        cout<<"Increment of First Number: "<<++a<<"\t Now First Number="<<a<<endl;
+        cout<<"Increment of Second Number: "<<b++<<"\t Now Second Number="<<b<<endl;
+        cout<<"Decrement of First Number: "<<a--<<"\t Now First Number="<<a<<endl;
+        cout<<"Decrement of Second Number: "<<--b<<"\t Now Second Number="<<b<<endl;
         starline();
         cout<<"First Number is Greater than Second Number: "<<(a>b)<<endl;
         cout<<"First Number is Less than Second Number: "<<(a<b)<<endl;
