@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
@@ -10,7 +11,15 @@ int main() {
         cout<<"Addition: "<<a+b<<endl;
         cout<<"Subtraction: "<<a-b<<endl;
         cout<<"Multiplication: "<<a*b<<endl;
-        cout<<"Division: "<<a/b<<endl;
-        cout<<"Modulus: "<<a%b<<endl;
+        if (b==0)
+        {
+            cout<<"Division: Infinity"<<endl;
+            cout<<"Modulus: Undefined"<<endl;
+        }
+        else
+        {
+            cout<<"Division: "<< static_cast<double>(a) / static_cast<double>(b) <<endl;
+            cout<<"Modulus: "<< fmod(a, (double)b) <<endl;
+        }
 return 0;
 }
