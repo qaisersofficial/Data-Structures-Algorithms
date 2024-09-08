@@ -18,8 +18,8 @@ int main() {
         }
         else
         {
-            cout<<"Division: "<< static_cast<double>(a) / static_cast<double>(b) <<endl;
-            cout<<"Modulus: "<< fmod(a, (double)b) <<endl;
+            cout<<"Division: "<< a / static_cast<float>(b) <<endl;
+            cout<<"Modulus: "<< a%b <<endl;
         }
 return 0;
 }
