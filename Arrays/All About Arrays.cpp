@@ -38,9 +38,9 @@ int main() {
 
 
     // initialize an array partially in C++
-    int partialArray[10] = { 55, 33};
-    for (int i = 0; i < 10; i++) {
-        cout << partialArray[i] << " "; // output: 55 33 0 0 0 0 0 0 0 0
-    }
+    // int partialArray[10] = { 55, 33};
+    // for (int i = 0; i < 10; i++) {
+    //     cout << partialArray[i] << " "; // output: 55 33 0 0 0 0 0 0 0 0
+    // }
 return 0;
 }
