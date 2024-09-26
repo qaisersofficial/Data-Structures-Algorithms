@@ -23,17 +23,17 @@ int main() {
     // }
 
     // getting input from user and print the array
-    int N;
-    cout<<"Please tell me how many elements you want to enter in the array: ";
-    cin >> N;
-        int arr[N]; // this is called dynamic array
-        cout<< "Type the element of the array:";
-        for( int i = 0; i < N; i++){
-            cin >> arr[i];
-        }
-        cout << " The elements of the array are: ";
-        for ( int i = 0; i < N; i++){
-            cout << arr[i] << " ";
-        }
+    // int N;
+    // cout<<"Please tell me how many elements you want to enter in the array: ";
+    // cin >> N;
+    //     int arr[N]; // this is called dynamic array
+    //     cout<< "Type the element of the array:";
+    //     for( int i = 0; i < N; i++){
+    //         cin >> arr[i];
+    //     }
+    //     cout << " The elements of the array are: ";
+    //     for ( int i = 0; i < N; i++){
+    //         cout << arr[i] << " ";
+    //     }
 return 0;
 }
