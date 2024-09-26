@@ -47,5 +47,21 @@ int main() {
     // for (int i = 0; i < 5; i++) {
     //     cout << arr[i] << " "; // output: 6 0 0 0 0
     // }
+
+
+    int array [5] ;
+    // inserting elements in array
+    array[0] = 10;
+    array[1] = 20;
+    array[2] = 30;
+    array[3] = 40;
+    array[4] = 50;
+    // accessing and printing elements of an array
+    cout << "array[0] = " << array[0] << endl;
+    cout << "array[1] = " << array[1] << endl;
+    cout << "array[2] = " << array[2] << endl;
+    cout << "array[3] = " << array[3] << endl;
+    cout << "array[4] = " << array[4] << endl;
+
 return 0;
 }
