@@ -62,6 +62,9 @@ int main() {
     cout << "array[2] = " << array[2] << endl;
     cout << "array[3] = " << array[3] << endl;
     cout << "array[4] = " << array[4] << endl;
+    //Update Array Element
+    array[2] = 100;
+    cout << "updated array[2] = " << array[2] << endl;
 
 return 0;
 }
