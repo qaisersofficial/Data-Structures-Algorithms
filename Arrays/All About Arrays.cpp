@@ -43,9 +43,9 @@ int main() {
     //     cout << partialArray[i] << " "; // output: 55 33 0 0 0 0 0 0 0 0
     // }
     //initialize an array with zero
-    int arr[5] = {6};
-    for (int i = 0; i < 5; i++) {
-        cout << arr[i] << " "; // output: 6 0 0 0 0
-    }
+    // int arr[5] = {6};
+    // for (int i = 0; i < 5; i++) {
+    //     cout << arr[i] << " "; // output: 6 0 0 0 0
+    // }
 return 0;
 }
