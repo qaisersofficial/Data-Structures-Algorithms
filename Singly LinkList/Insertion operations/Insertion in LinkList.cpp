@@ -21,6 +21,26 @@ class singlyLinkList
         newNode->next = head; // Point the new node to the head
         head = newNode; // Make the new node as head
     }
+    // Function to insert at the end
+    void insertAtEnd(int data)
+    {
+        Node* newNode = new Node(); // Create a new node
+        newNode->data = data; // Assign data to the new node
+        newNode->next = nullptr; // Point the new node to NULL
+        if(head == nullptr) // If the link list is empty
+        {
+            head = newNode; // Make the new node as head
+            return;
+        }else
+        {
+            Node* temp = head; // Create a temporary pointer to head
+            while(temp->next != nullptr) // Iterate till the end of the link list
+            {
+                temp = temp->next; // Move the pointer to the next node
+            }
+            temp->next = newNode; // Point the last node to the new node
+        }
+    }
     void display() // Function to display the link list
     {
         Node* temp = head; // Create a temporary pointer to head
@@ -36,6 +56,8 @@ int main() {
     sLL.insertAtBegin(10); // Insert 10 at the beginning
     sLL.insertAtBegin(20); // Insert 20 at the beginning
     sLL.insertAtBegin(30); // Insert 30 at the beginning
+    sLL.insertAtEnd(40); // Insert 40 at the end
+    sLL.insertAtEnd(50); // Insert 50 at the end
     sLL.display(); // Display the singly link list
 return 0;
 }
