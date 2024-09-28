@@ -74,12 +74,9 @@ class singlyLinkList
 };
 int main() {
     singlyLinkList sLL; // Object of singlyLinkList
-    sLL.insertAtBegin(10); // Insert 10 at the beginning
-    sLL.insertAtBegin(20); // Insert 20 at the beginning
-    sLL.insertAtBegin(30); // Insert 30 at the beginning
-    sLL.insertAtEnd(40); // Insert 40 at the end
-    sLL.insertAtEnd(50); // Insert 50 at the end
-    sLL.insertAtPosition(25, 2); // Insert 25 at position 2
+    sLL.insertAtBegin(786);
+    sLL.insertAtEnd(687);
+    sLL.insertAtPosition(876,2);
     sLL.display(); // Display the singly link list
 return 0;
 }
