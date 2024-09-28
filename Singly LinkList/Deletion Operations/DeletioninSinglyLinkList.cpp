@@ -101,7 +101,10 @@ int main() {
     sLL.insertNode(31);
     sLL.insertNode(74);
     sLL.insertNode(12);
+    cout << "List before Deletion at end:- \t";
+    sLL.display();
     sLL.deleteAtEnd();
+    cout << "\nList after Deletion at end:- \t";
     sLL.display();
     return 0;
 }
