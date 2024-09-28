@@ -98,13 +98,15 @@ int main() {
     Node with data 70 deleted from the beginning.
     Node with data 90 deleted from the beginning.
     List is empty, nothing to delete. */
-    sLL.insertNode(31);
-    sLL.insertNode(74);
-    sLL.insertNode(12);
-    cout << "List before Deletion at end:- \t";
-    sLL.display();
-    sLL.deleteAtEnd();
-    cout << "\nList after Deletion at end:- \t";
-    sLL.display();
+    // sLL.insertNode(31);
+    // sLL.insertNode(74);
+    // sLL.insertNode(12);
+    // cout << "List before Deletion at end:- \t";
+    // sLL.display();
+    // sLL.deleteAtEnd();
+    // cout << "\nList after Deletion at end:- \t";
+    // sLL.display();
+
+    
     return 0;
 }
