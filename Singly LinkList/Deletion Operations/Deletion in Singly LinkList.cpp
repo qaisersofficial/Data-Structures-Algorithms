@@ -45,7 +45,7 @@ class singlyLinkList
             Node* temp = head;
             head = head->next;
             delete temp;
-            cout << "Node deleted from the beginning." << endl;
+            cout << "Node deleted from the beginning---\t";
         }
         void display(){
             Node* tempPtr = head;
@@ -61,10 +61,11 @@ class singlyLinkList
 };
 int main() {
     singlyLinkList sLL; // Object of singlyLinkList
-    // sLL.deleteFromBeginning(); // output: List is empty, nothing to delete.
+    
     sLL.insertNode(65+16+80); //161
     sLL.insertNode(70);
     sLL.insertNode(90);
+    sLL.deleteFromBeginning(); // output: Node deleted from the beginning---      70->90->null
     sLL.display();
     return 0;
 }
