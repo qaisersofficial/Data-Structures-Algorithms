@@ -71,6 +71,35 @@ class singlyLinkList
                 delete delTailNode;
                 temp->next = nullptr; 
         }
+
+        // Delete a node from a given position.
+        void deleteFromPosition(int position){
+            if (!head) //head == nullptr
+            {
+                cout << "Link List is empty";
+            }
+            //if the position is 1, delete the head node
+            if (position == 1) // position starts fromm 1
+            {
+                Node* toDeleteHead = head;
+                head = head->next;
+                delete toDeleteHead;
+                return;
+            }
+            //traverse to find the node just before the position
+            Node* deleteSpecificPosition = head;
+            for (int i = 1; deleteSpecificPosition && i < position - 1; ++i) // deleteSpecificPosition != nullptr
+            {
+                deleteSpecificPosition = deleteSpecificPosition->next;
+            }
+            if (!deleteSpecificPosition || !deleteSpecificPosition->next)
+            {
+                cout << "Position out of bounds";
+            }
+            Node* nodeToDelete = deleteSpecificPosition->next;
+            deleteSpecificPosition->next = deleteSpecificPosition->next->next;
+            delete nodeToDelete;    
+        }
         void display(){
             Node* tempPtr = head;
             while (tempPtr != nullptr)
@@ -107,6 +136,18 @@ int main() {
     // cout << "\nList after Deletion at end:- \t";
     // sLL.display();
 
-    
+        sLL.insertNode(69);
+        sLL.insertNode(23);
+        sLL.insertNode(45);
+        sLL.insertNode(12);
+        sLL.insertNode(89);
+        sLL.insertNode(34);
+        sLL.insertNode(56);
+        sLL.insertNode(78);
+        cout << "List before deletion: ";
+        sLL.display();
+        sLL.deleteFromPosition(3);
+        cout << "\nList after deletion from position 3: ";
+        sLL.display();
     return 0;
 }
