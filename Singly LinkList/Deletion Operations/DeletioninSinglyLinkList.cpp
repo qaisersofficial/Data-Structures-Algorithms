@@ -47,6 +47,30 @@ class singlyLinkList
             delete temp;
             cout << "Node with data " << temp->data << " deleted from the beginning." << endl;
         }
+
+    // Delete a node from the end.
+        void deleteAtEnd(){
+            // if list is empty
+            if (head == nullptr){
+                cout << "Link list is empty";
+            }
+            // if list has only one node
+            if (head->next == nullptr)
+            {
+                delete head;
+                head = nullptr;
+                return;
+            }
+            // traverse to find the second-to-last node
+            Node* temp = head;
+            while (temp->next->next != nullptr)
+            {
+               temp = temp->next;
+            }
+                Node* delTailNode = temp->next;
+                delete delTailNode;
+                temp->next = nullptr; 
+        }
         void display(){
             Node* tempPtr = head;
             while (tempPtr != nullptr)
@@ -74,5 +98,10 @@ int main() {
     Node with data 70 deleted from the beginning.
     Node with data 90 deleted from the beginning.
     List is empty, nothing to delete. */
+    sLL.insertNode(31);
+    sLL.insertNode(74);
+    sLL.insertNode(12);
+    sLL.deleteAtEnd();
+    sLL.display();
     return 0;
 }
