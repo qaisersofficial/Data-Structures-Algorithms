@@ -45,7 +45,7 @@ class singlyLinkList
             Node* temp = head;
             head = head->next;
             delete temp;
-            cout << "Node deleted from the beginning---\t";
+            cout << "Node with data " << temp->data << " deleted from the beginning." << endl;
         }
         void display(){
             Node* tempPtr = head;
@@ -65,7 +65,14 @@ int main() {
     sLL.insertNode(65+16+80); //161
     sLL.insertNode(70);
     sLL.insertNode(90);
-    sLL.deleteFromBeginning(); // output: Node deleted from the beginning---      70->90->null
+    sLL.deleteFromBeginning(); 
+    sLL.deleteFromBeginning();
+    sLL.deleteFromBeginning();
+    sLL.deleteFromBeginning();
     sLL.display();
+/*  output: Node with data 161 deleted from the beginning.
+    Node with data 70 deleted from the beginning.
+    Node with data 90 deleted from the beginning.
+    List is empty, nothing to delete. */
     return 0;
 }
