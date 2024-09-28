@@ -41,15 +41,7 @@ class singlyLinkList
             temp->next = newNode; // Point the last node to the new node
         }
     }
-    void display() // Function to display the link list
-    {
-        Node* temp = head; // Create a temporary pointer to head
-        while(temp != nullptr) // Iterate till the end of the link list
-        {
-            cout << temp->data << " "; // Print the data
-            temp = temp->next; // Move the pointer to the next node
-        }
-    }
+  
     // Function to insert at a given position
     void insertAtPosition(int data, int position)
     {
@@ -69,6 +61,15 @@ class singlyLinkList
         }
         newNode->next = temp->next; // Point the new node to the next node
         temp->next = newNode; // Point the previous node to the new node
+    }
+      void display() // Function to display the link list
+    {
+        Node* temp = head; // Create a temporary pointer to head
+        while(temp != nullptr) // Traverse till the end of the link list
+        {
+            cout << temp->data << " "; // Print the data
+            temp = temp->next; // Move the pointer to the next node
+        }
     }
 };
 int main() {
