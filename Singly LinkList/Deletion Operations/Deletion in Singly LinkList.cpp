@@ -62,14 +62,14 @@ class singlyLinkList
 int main() {
     singlyLinkList sLL; // Object of singlyLinkList
     
-    sLL.insertNode(65+16+80); //161
-    sLL.insertNode(70);
-    sLL.insertNode(90);
-    sLL.deleteFromBeginning(); 
-    sLL.deleteFromBeginning();
-    sLL.deleteFromBeginning();
-    sLL.deleteFromBeginning();
-    sLL.display();
+    // sLL.insertNode(65+16+80); //161
+    // sLL.insertNode(70);
+    // sLL.insertNode(90);
+    // sLL.deleteFromBeginning(); 
+    // sLL.deleteFromBeginning();
+    // sLL.deleteFromBeginning();
+    // sLL.deleteFromBeginning();
+    // sLL.display();
 /*  output: Node with data 161 deleted from the beginning.
     Node with data 70 deleted from the beginning.
     Node with data 90 deleted from the beginning.
