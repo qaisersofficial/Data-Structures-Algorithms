@@ -67,16 +67,27 @@ class singlyLinkList
         Node* temp = head; // Create a temporary pointer to head
         while(temp != nullptr) // Traverse till the end of the link list
         {
-            cout << temp->data << " "; // Print the data
+            cout << temp->data << "->"; // Print the data
+             if (temp->next == nullptr) {
+                cout << "null";
+            }
             temp = temp->next; // Move the pointer to the next node
         }
     }
 };
 int main() {
     singlyLinkList sLL; // Object of singlyLinkList
+    cout << "After inserting at the beginning: ";
     sLL.insertAtBegin(786);
+    sLL.display(); 
+    cout << endl;
+    cout << "After inserting at the end: ";
     sLL.insertAtEnd(687);
+    sLL.display(); 
+    cout << endl;
+    cout << "After inserting at the position 2: ";
     sLL.insertAtPosition(876,2);
     sLL.display(); // Display the singly link list
+    cout << endl;
 return 0;
 }
