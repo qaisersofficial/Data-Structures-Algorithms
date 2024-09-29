@@ -62,6 +62,21 @@ class singlyLinkList
         newNode->next = temp->next; // Point the new node to the next node
         temp->next = newNode; // Point the previous node to the new node
     }
+    // Function to reverse the singly link list
+    void reverseSinglyLinkList()
+    {
+        Node* prev = nullptr; // Create a previous pointer and initialize it to NULL
+        Node* current = head; // Create a current pointer and initialize it to head
+        Node* next = nullptr; // Create a next pointer and initialize it to NULL
+        while(current != nullptr) // Iterate till the end of the link list
+        {
+            next = current->next; // Point the next pointer to the next node
+            current->next = prev; // Point the current node to the previous node
+            prev = current; // Move the previous pointer to the current node
+            current = next; // Move the current pointer to the next node
+        }
+        head = prev; // Make the last node as head
+    }
       void display() // Function to display the link list
     {
         Node* temp = head; // Create a temporary pointer to head
@@ -78,16 +93,19 @@ class singlyLinkList
 int main() {
     singlyLinkList sLL; // Object of singlyLinkList
     cout << "After inserting at the beginning: ";
-    sLL.insertAtBegin(786);
+    sLL.insertAtBegin(1);
     sLL.display(); 
     cout << endl;
     cout << "After inserting at the end: ";
-    sLL.insertAtEnd(687);
+    sLL.insertAtEnd(3);
     sLL.display(); 
     cout << endl;
     cout << "After inserting at the position 2: ";
-    sLL.insertAtPosition(876,2);
+    sLL.insertAtPosition(2,2);
     sLL.display(); // Display the singly link list
     cout << endl;
+    cout << "Reversed singly link list: ";
+    sLL.reverseSinglyLinkList(); // Reverse the singly link list
+    sLL.display(); // Display the singly link list
 return 0;
 }
